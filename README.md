@@ -36,20 +36,20 @@ Requirement
     iteration=50
 模型结构图
 ----
-![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/modelarc.JPG)
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/tree/master/pic/modelarc.JPG)
 
 实验accuracy图
 ---
-![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/acc.JPG)
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/tree/master/pic/acc.JPG)
  
 
 实验结论分析
 ----
     在2层lstm网络加上Attention layer和自定义Activation在最后模型在训练数据集上的accuracy 94.56%,在测试集上的accuracy能达到89.89%
   
-Activation图
+Activation Function
 ---
-![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/3.jpg)
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/tree/master/pic/3.jpg)
     
         
     
