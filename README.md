@@ -17,9 +17,11 @@ Requirement
 实验结果导读
 ----
 >>新闻文本分类，使用jieba进行中文分词去掉停用词，采用`多层lstm`网络架构+`Attention layer` (https://nlp.stanford.edu/pubs/emnlp15_attn.pdf)<br/>
+>>train_model.py 模型构造和训练
 >>自定义Activation Function(e-|x|)<br/>
 >>>def ActivationFun(x):<br/>
 >>>>return tf.exp(-1*tf.abs(x))
+
 
 数据集清洗
 ----
