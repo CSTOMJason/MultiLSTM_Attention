@@ -46,6 +46,7 @@ Requirement
   
 Activation图
 ---
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/3.jpg)
     
         
     
