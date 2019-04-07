@@ -36,11 +36,11 @@ Requirement
     iteration=50
 模型结构图
 ----
-![](https://github.com/CSTOMJason/MultiLSTM_Attention/tree/master/pic/modelarc.JPG)
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/pic/modelarc.JPG)
 
 实验accuracy图
 ---
-![](https://github.com/CSTOMJason/MultiLSTM_Attention/tree/master/pic/acc.JPG)
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/pic/acc.JPG)
  
 
 实验结论分析
@@ -49,7 +49,7 @@ Requirement
   
 Activation Function
 ---
-![](https://github.com/CSTOMJason/MultiLSTM_Attention/tree/master/pic/3.jpg)
+![](https://github.com/CSTOMJason/MultiLSTM_Attention/blob/master/pic/3.jpg)
     
         
     
