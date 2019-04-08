@@ -135,14 +135,23 @@ with tf.name_scope("AttentionLayer"):
     outputs_att=attention(outputs,12)
   
   
-with tf.name_scope("Muil_LSTM"):
-    lstm_cell_1=tf.nn.rnn_cell.LSTMCell(hidden_units,name="LSTM_CELL_1")
-    lstm_cell_2=tf.nn.rnn_cell.LSTMCell(hidden_units,name="LSTM_CELL_2")
-    mlstm=tf.nn.rnn_cell.MultiRNNCell([lstm_cell_1,lstm_cell_2])
-    drop_mlstm=tf.nn.rnn_cell.DropoutWrapper(mlstm,output_keep_prob=keep_prob)
-    init_states=mlstm.zero_state(batchsize,dtype=tf.float32)
-    outputs,states=tf.nn.dynamic_rnn(drop_mlstm,embedded,initial_state=init_states,time_major=False)
+#全连接层1
+with tf.name_scope("W_FC1_LAYER"):
+    W_fc1=tf.Variable(tf.truncated_normal(shape=[32,1024]),name="W_FC1")
+    b_fc1=tf.Variable(tf.zeros([1024]),name="b_Fc1")
+    out1=tf.matmul(outputs_att,W_fc1)+b_fc1
+    out1=ActivationExpAbs_x(tf.nn.dropout(out1,keep_prob=W_fc_keep))
 
+#全连接层2
+with tf.name_scope("W_FC2_LAYER"):
+    W_fc2=tf.Variable(tf.truncated_normal(shape=[1024,128]),name="W_FC2")
+    b_fc2=tf.Variable(tf.zeros([128]),name="b_fc2")
+    out2=ActivationExpAbs_x(tf.matmul(out1,W_fc2)+b_fc2)
+
+with tf.name_scope("PRED_LAYER"):
+    W_pred=tf.Variable(tf.truncated_normal(shape=[128,15]),name="W_PRED")
+    b_pred=tf.Variable(tf.zeros([15]),name="B_pred")
+    pred=ActivationExpAbs_x(tf.matmul(out2,W_pred)+b_pred)
  
 
 with tf.name_scope("Cross_Entropy"):
