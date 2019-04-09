@@ -1,0 +1,2 @@
+model_checkpoint_path: "mlstm_att.ckpt"
+all_model_checkpoint_paths: "mlstm_att.ckpt"
