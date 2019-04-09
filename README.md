@@ -8,6 +8,7 @@
 数据集链接
 ----
 >>`请VPN下载`<br/>
+>>`20几万数据量，15个类别`<br/>
 >>Source数据集(https://drive.google.com/open?id=1do9wGYZzYTT1k4qRx7qlp1cfYdcJyUax)<br/>
 >>clean数据集(https://drive.google.com/open?id=1x318dEegr76hhTzRcrkiiyS16TEZ5ZRc)
 
