@@ -1,6 +1,10 @@
 # MultiLSTM_Attention
 今日头条新闻分类
 ====
+模型使用
+----
+    Prediction文件夹:python prediction.py
+    修改输入文本见 prediction.py
 数据集链接
 ----
 >>Source数据集(https://drive.google.com/open?id=1do9wGYZzYTT1k4qRx7qlp1cfYdcJyUax)<br/>
